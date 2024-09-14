@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogr</title>
+    <link rel="stylesheet" href="blogr.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Volkhov&display=swap">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="firstdiv">
+                <img src="./images/logo.svg" alt="">
+                <ul>
+                    <li>
+                        <p>Product <img src="./images/icon-arrow-light.svg" alt=""></p>
+            
+                        <ul class="productmenu">
+                                <li><a href="www.mmas.sch.ng">Overview</a></li>
+                                <li><a href="www.mmas.sch.ng">Pricing</a></li>
+                                <li><a href="www.mmas.sch.ng">Marketplace</a></li>
+                                <li><a href="www.mmas.sch.ng">Features</a></li>
+                                <li"><a href="www.mmas.sch.ng">Integrations</a></li>
+                        </ul>
+                    </li>
+                            
+                    <li>
+                        <p>Company <img src="./images/icon-arrow-light.svg" alt=""></p>
+            
+                        <ul class="companymenu">
+                            <li><a href="www.mmas.sch.ng">About</a></li>
+                            <li><a href="www.mmas.sch.ng">Team</a></li>
+                            <li><a href="www.mmas.sch.ng">Team</a></li>
+                            <li><a href="www.mmas.sch.ng">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Connect <img src="images/icon-arrow-light.svg" alt=""></p>
+            
+                        <ul class="connectmenu">
+                            <li><a href="www.mmas.sch.ng">Contact</a></li>
+                            <li><a href="www.mmas.sch.ng">Newsletter</a></li>
+                            <li><a href="www.mmas.sch.ng">LinkedIn</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="seconddiv">
+                <a href="www.mmas.sch.ng">Login</a>
+                <button>Sign Up</button>
+            </div> 
+            <img class="iconhamburger" 
+            onclick=showDropdownMenu() src="./images/icon-hamburger.svg" alt="">
+
+            <img class="iconclose"
+            onclick=hideDropdownMenu() src="./images/icon-close.svg" alt="">
+
+
+            
+            
+            <ul class="dropdownmenu">
+                <div class="list">
+                    <li style="list-style-type: none;"><p>
+                        Product <img src="./images/icon-arrow-dark.svg" alt=""></p>
+                        <ul class="productmenumobile mobile">
+                            <li><a href="www.mmas.sch.ng">Overview</a></li>
+                            <li><a href="www.mmas.sch.ng">Pricing</a></li>
+                            <li><a href="www.mmas.sch.ng">Marketplace</a></li>
+                            <li><a href=""www.mmas.sch.ng>Features</a></li>
+                            <li><a href="www.mmas.sch.ng">Integrations</a></li>
+                    </ul>
+                </li>
+                    <li style="list-style-type: none;"><p>
+                        Company <img src="./images/icon-arrow-dark.svg" alt=""></p>
+                        <ul class="companymenumobile mobile">
+                            <li><a href="www.mmas.sch.ng">About</a></li>
+                            <li><a href="www.mmas.sch.ng">Team</a></li>
+                            <li><a href="www.mmas.sch.ng">Team</a></li>
+                            <li><a href="www.mmas.sch.ng">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li style="list-style-type: none;"><p>
+                        Connect <img src="images/icon-arrow-dark.svg" alt=""></p>
+                        <ul class="connectmenumobile mobile">
+                            <li><a href="www.mmas.sch.ng">Contact</a></li>
+                            <li><a href="www.mmas.sch.ng">Newsletter</a></li>
+                            <li><a href="www.mmas.sch.ng">LinkedIn</a></li>
+                        </ul></li>
+                </div>
+                <div class="ulbuttondiv">
+                    <a href="www.mmas.sch.ng">Login</a>
+                    <button>Sign Up</button>
+                </div>
+            </ul>
+       </nav>
+        
+         <h1>A modern publishing platform</h1>
+         <p>Grow your audience and build your online brand</p>
+           <div>
+            <button>Start for Free</button>
+            <button class="learnbutton">Learn More</button>
+           </div>
+    </header>
+    <script>
+        function showDropdownMenu(){
+            const dropdownmenu = document.querySelector(".dropdownmenu")
+            dropdownmenu.style.display = "flex"
+            const iconclose = document.querySelector(".iconclose")
+            iconclose.style.display = "flex"
+            const iconhamburger = document.querySelector(".iconhamburger")
+            iconhamburger.style.display = "none"
+        }
+        function hideDropdownMenu(){
+            const dropdownmenu = document.querySelector(".dropdownmenu")
+            dropdownmenu.style.display = "none"
+            const iconclose = document.querySelector(".iconclose")
+            iconclose.style.display = "none"
+            const iconhamburger = document.querySelector(".iconhamburger")
+            iconhamburger.style.display = "flex"
+        }
+    </script>
+
+    <main>
+        <section class="firstsection">
+            <h2>Designed for the future</h2>
+                <div>
+                    <div class="thirddiv">
+                        <h3>Introducing an extensible editor</h3>
+                        <p>
+                            Blogr features an exceedingly intuitive interface which
+                            lets you focus on one thing: creating content. The editor
+                            supports management of multiple blogs and allows easy 
+                            manipulation of embeds such as images, videos, and Markdown.
+                            Extensibility with plugins and themes provide easy ways to 
+                            add functionality or change the looks of a blog.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Robust content management</h3>
+                        <p>
+                            Flexible content management enables users to easily move through
+                            posts. Increase the usability of your blog by adding customized
+                            categories, sections, format, or flow. With this functionality,
+                            you’re in full control.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="secondsection">
+            <div class="fourthdiv">
+                <img src="./images/illustration-phones.svg" alt="">
+            </div>
+            <div class="fifthdiv">
+                <h3>State of the Art Infrastructure</h3>
+                <p>
+                    With reliability and speed in mind, worldwide data centers provide
+                    the backbone for ultra-fast connectivity.This ensures your site will
+                    load instantly, no matter where your readers are, keeping your site competitive.
+                </p>
+            </div>
+        </section>
+
+        <section class="firstsection" id="thirdsection">
+            <div>
+                <div class="thirddiv">
+                    <h3>Free, open, simple</h3>
+                    <p>
+                        Blogr is a free and open source application backed by a
+                        large community of helpful developers. It supports features
+                        such as code syntax highlighting, RSS feeds, social media
+                        integration, third-party commenting tools, and works 
+                        seamlessly with Google Analytics. The architecture is clean
+                        and is relatively easy to learn.
+                    </p>
+                </div>
+                <div>
+                    <h3>Powerful tooling</h3>
+                    <p>
+                        Batteries included. We built a simple and straightforward CLI
+                        tool that makes customization and deployment a breeze, but
+                        capable of producing even the most complicated sites.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerimgdiv">
+            <img src="./images/logo.svg" alt="">
+        </div>
+        <div>
+            <p><strong>Product</strong></p>
+            <div>
+                <a href="www.mmas.sch.ng">Overview</a> <br>
+                <a href="www.mmas.sch.ng">Pricing</a> <br>
+                <a href="www.mmas.sch.ng">Marketplace</a> <br>
+                <a href="www.mmas.sch.ng">Features</a> <br>
+                <a href="www.mmas.sch.ng">Integrations</a>
+            </div>
+        </div>
+        <div>
+            <p><strong>Company</strong></p>
+            <div id="companylinkdiv">
+                <a href="www.mmas.sch.ng">About</a> <br>
+                <a href="www.mmas.sch.ng">Team</a> <br>
+                <a href="www.mmas.sch.ng">Blog</a> <br>
+                <a href="www.mmas.sch.ng">Careers</a>
+            </div>
+        </div>
+        <div>
+            <p><strong>Connect</strong></p>
+            <div>
+                <a href="www.mmas.sch.ng">Contact</a> <br>
+                <a href="www.mmas.sch.ng">Newsletter</a> <br>
+                <a href="www.mmas.sch.ng">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
